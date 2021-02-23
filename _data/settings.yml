@@ -7,9 +7,9 @@ disqus:
 google_analytics_ga4: G-XT0PGLRP27
 
 menu:
-- {name: 'About Me', folder: 'pages', file: 'about.md'}
-- {name: 'Research', folder: 'pages', file: 'research.md'}
-- {name: 'Media', folder: 'pages', file: 'media.md'}
+- {name: 'About Me', folder: 'pages', file: 'about.html'}
+- {name: 'Research', folder: 'pages', file: 'research.html'}
+- {name: 'Media', folder: 'pages', file: 'media.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
@@ -22,9 +22,9 @@ social:
  - {icon: 'linkedin', link: 'https://www.linkedin.com/in/srezayi/'}
 
 # Customize site text
-pagination:
-  next_page: 'Newer'
-  previous_page: 'Older'
+# pagination:
+#   next_page: 'Newer'
+#   previous_page: 'Older'
 
 sharing_button_prompt: 'Feel free to share!'
 
