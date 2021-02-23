@@ -4,7 +4,7 @@ title: "GNN for Reasoning - part 2"
 author: "Saed Rezayi"
 categories: NN
 tags: [GNN]
-image: kld.png
+image: kld.jpeg
 ---
 
 KL-divergence is a non-symmetric measure of the difference between two probability distributions $P$ and $Q$
