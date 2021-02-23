@@ -4,7 +4,6 @@ title: "GNN for Reasoning - part 1"
 author: "Saed Rezayi"
 categories: NN
 tags: [GNN]
-image: reason.png
 ---
 
 **QUESTION:**  Can we use Graph Neural Networks for reasoning?
