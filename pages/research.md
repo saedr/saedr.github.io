@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: misc
 title: Publication
-permalink: /publication/
 ---
 
 - S. Rezayi, S. Soleymani, H. R. Arabnia, and S. Li, “Socially Aware Multimodal Deep Neural Networks for Fake News Classification,” submitted to MIPR 2021. 

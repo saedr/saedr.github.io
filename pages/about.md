@@ -1,7 +1,6 @@
 ---
-layout: page
+layout: misc
 title: About Me
-permalink: /about/
 ---
 
 I am a PhD student in the computer Science department at University of Georgia. I am working under the supervision of professor [Sheng Li](http://cobweb.cs.uga.edu/~shengli/). I am generally interested in Artificial Intelligence, Machine Learning, Natural Language Processing, and Social Network Analysis. My research aims to use computational algorithms (e.g., NLP) to design and develop AI-based technologies.
