@@ -10,6 +10,7 @@ $pinterest-color: #bd081c;
 $medium-color: #00AB6C;
 $codepen-color: black;
 $rss-color: #ff6600;
+$google-scholar-color: #4788ee;
 
 @mixin social-media-icon($color, $transition){
   -webkit-transition: $transition;
@@ -75,4 +76,9 @@ $rss-color: #ff6600;
 .fa-rss-square {
   padding: 5px;
   @include social-media-icon($rss-color, $icon-transition-time);
+}
+
+.ai-google-scholar {
+  padding: 5px;
+  @include social-media-icon($google-scholar-color, $icon-transition-time);
 }
