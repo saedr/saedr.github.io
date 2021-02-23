@@ -42,5 +42,5 @@ $$=\mathbb{E}_{Q}\left[\log P(X|Z)\right]-\text{KL}(Q(Z|X)||P(Z))$$
 Now we can model this with an encoder-decoder (autoencoder) architecture as follows where the encoder is $Q(Z|X)$ and the decoder is modeled by $P(X|Z)$. 
 ![](https://paper-attachments.dropbox.com/s_ACD8843D58A10AD799AE266302228E63B7692ABF84D737D63C8DB752F21F149B_1571720037783_Screenshot+from+2019-10-22+00-53-40.png)
 
-We can think of the first part of the objective function as reconstruction error and the second part as a constraint on $P(Z)$ (i.e., $p(Z)$ should be similar to $Q(Z)$). This idea was used in `Kingma & Welling, ICLR, 2014 [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
+We can think of the first part of the objective function as reconstruction error and the second part as a constraint on $P(Z)$ (i.e., $p(Z)$ should be similar to $Q(Z)$). This idea was used in `Kingma & Welling, ICLR, 2014` [Auto-Encoding Variational Bayes](https://arxiv.org/pdf/1312.6114.pdf)
 
