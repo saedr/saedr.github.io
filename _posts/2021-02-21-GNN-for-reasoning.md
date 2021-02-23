@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "GNN for Reasoning"
+title: "GNN for Reasoning - part 1"
 author: "Saed Rezayi"
 categories: NN
 tags: [GNN]
