@@ -28,11 +28,11 @@ Long answer: If we define *reasoning* as “finding new facts over the knowledge
 - Using Bayes theorem: $P(Z|X)=\frac{P(X|Z)P(Z)}{P(X)}=\frac{P(X,Z)}{P(X)}$. Computing this probability usually involves hard-to-solve integrals with no analytical solution.
 
 
-- One approach to solve this problem is called **Variational Inferences.** Variational Inference solves this problem by finding a distribution $$Q$$ that approximates the true distribution $$P$$.
+- One approach to solve this problem is called **Variational Inferences.** Variational Inference solves this problem by finding a distribution $Q$ that approximates the true distribution $P$.
 
 
 - The idea behind variational inference is this: let's just perform inference on an easy, parametric distribution $Q_{\phi}(Z|X)$ (like a Gaussian) for which we know how to do posterior inference, but adjust the parameters $\phi$ so that $Q_{\phi}$ is as **close** to $P$ as possible.
 ![](https://paper-attachments.dropbox.com/s_ACD8843D58A10AD799AE266302228E63B7692ABF84D737D63C8DB752F21F149B_1571706706043_Screenshot+from+2019-10-21+21-11-35.png)
 
-- We can uses $$\text{KL}$$-divergence as a measure of how well our approximation fits the true posterior.
+- We can uses $\text{KL}$-divergence as a measure of how well our approximation fits the true posterior.
 ----------
