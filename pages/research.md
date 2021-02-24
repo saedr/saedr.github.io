@@ -14,7 +14,7 @@ title: Publication
 - S. Rezayi, A. Hosseini, and H. Teheri, “Implementation of Extensible Authentication Protocol in OPNET Modeller,” ACM International Conference on Network, Communication and Computing (ICNCC), 2011. [pdf](/papers/OPNET.pdf)
 
 # Patents
-N. Lipka, S. Rezayi, V. Vinay, R. Rossi, F. Dernoncourt, and T. King, “Search query reformulation with a robust framework for entity linking and link prediction.” patent pending.
+- N. Lipka, S. Rezayi, V. Vinay, R. Rossi, F. Dernoncourt, and T. King, “Search query reformulation with a robust framework for entity linking and link prediction.” patent pending.
 
 
 # Professional Activities
