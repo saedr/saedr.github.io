@@ -15,7 +15,7 @@ sass:
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
 title:             "Saed Rezayi"
-description:        "Personal Webpage"
+description:        "NLP research scientist working on trustworthy evaluation of language models: validity, explainability, fairness, and robustness."
 author:              "Saed Rezayi"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
