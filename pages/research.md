@@ -22,6 +22,8 @@ I develop methods that separate them. One approach uses distillation to build a 
 
 A related result concerns reproducibility. I ran a panel of independently trained judges over identical predictions and measured how much the verdict depended on which judge was used. Judges disagreed with one another on the same items substantially more than the items differed among themselves, and a variance decomposition attributed more variance to the judge and to the judge-by-condition interaction than to the item itself. The practical consequence: a single-judge evaluation result is not reproducible in the way it is usually reported, and the judge's training regime belongs in the results section alongside the score.
 
+---
+
 ## Explainability: does the evidence support the claim?
 
 Scoring systems increasingly emit evidence alongside their scores — the span of text that supposedly justifies the decision. Whether that evidence actually supports the label is a separate empirical question from whether the label is correct, and a system can be right for reasons it cannot defend.
@@ -33,6 +35,8 @@ I audit this with perturbation methods: reading the evidence in isolation, maski
 
 I also lead an organization-wide effort to make explainability an accountable property of deployed scoring systems rather than an aspiration, including a metric suite for evidence defensibility and a validation study against expert judgment.
 
+---
+
 ## Fairness as a validity problem
 
 Fairness evidence is often reported as a table of group-wise metrics with no account of what would count as a problem. This is not a rigor failure so much as a framing failure: a fairness claim means something only when it coheres with a validity argument and an explicit account of risk, including which error direction is costly and to whom.
@@ -41,6 +45,8 @@ Fairness evidence is often reported as a table of group-wise metrics with no acc
 
 
 This work includes cost-sensitive audits of a deployed scoring system, a position paper proposing an alignment standard among validity claims, risk accounts, and detection contrasts, and a reporting checklist and detection typology intended to be usable rather than aspirational.
+
+---
 
 ## Robustness under adversarial pressure
 
@@ -51,19 +57,17 @@ Assessment systems face a real adversary: people who obtain content in advance, 
 
 Recent results include mapping the identifiability boundary for joint detection of compromised content and affected respondents, and a temporal change-point method that localizes when a leak began — validated against a bank of adversarial null conditions constructed specifically to produce false alarms.
 
+---
+
 ## Generating new items, and judging whether they are any good
 
-Assessment organizations constantly need new test items, and writing them is slow expert work. With colleagues at NBME and UC Irvine, I looked at whether large language models can draft clinical chart items — full patient records with an associated question — and, more importantly, how you would know whether the drafts are usable.
+Assessment organizations constantly need new test items, and writing them is slow expert work. I work on whether language models can draft them, and on the harder question of how you would know whether a draft is any good.
 
 <img src="{{ site.github.url }}/assets/img/research/counterfactual-items.svg" alt="A source vignette transformed through a counterfactual step into a new chart item, with expert ratings below" />
 
-The generation method is the interesting part. Rather than paraphrasing a source vignette, we told the model that some of its findings had been recorded incorrectly and asked it to reconstruct a clinically coherent record — which lands on a different diagnosis. A second pass has the model build a knowledge base about both the original and the new condition, and that gets fed back in to keep the result factually grounded. Items produced this way sat measurably further from their source material than chain-of-thought drafts did, so the model was inventing rather than rephrasing.
+One approach tells the model that some findings in a source case were recorded incorrectly and asks it to rebuild a clinically coherent record, which lands on a different diagnosis. Items produced this way sit measurably further from their source material than straightforward paraphrasing, so the model is inventing rather than rewording. Roughly a quarter came back free of major flaws, and about half were judged useful starting points.
 
-We also found that few-shot example choice matters in a direction I did not expect. Using the *easiest* examples — those where the model was least surprised by the correct answer — produced worse items. Harder examples seemed to push it into doing more actual reasoning.
-
-Two licensed physicians rated 100 generated items. Around a quarter were free of major flaws on first read and about half were judged useful starting points compared with writing from scratch. The part I keep coming back to is the disagreement: on chart quality the two experts agreed barely above chance. Their written comments showed they were reading the same rubric differently. That is the same problem as the rest of this page, arriving from the other direction — the evaluation was as much about the raters as about the items.
-
-[Paper](https://aclanthology.org/2025.aimecon-main.16.pdf) — Li, Rezayi, Baldwin, Harik, Yaneva, AIME-Con 2025.
+The evaluation is where this connects to the rest of the page. Expert raters disagreed with each other substantially about which drafts were acceptable, and in a related study rater differences accounted for about a third of the variance in quality ratings. As with model judges, the measured quality of a generated item depends heavily on who is measuring it.
 
 ---
 

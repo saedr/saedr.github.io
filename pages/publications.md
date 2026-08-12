@@ -9,6 +9,8 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=D_wiAi4AAAAJ&
 
 - S. Rezayi, L. A. Ha, Y. Zhou, A. Houriet, A. D'Addario, P. Baldwin, P. Harik, A. King, V. Yaneva, "Automated Scoring of Communication Skills in Physician-Patient Interaction: Balancing Performance and Scalability," **ACL-BEA**, 2025
 - S. Yarmohammadtoosky, Y. Zhou, V. Yaneva, P. Baldwin, S. Rezayi, B. Clauser, P. Harik, "Enhancing Security and Strengthening Defenses in Automated Short-Answer Grading Systems," **ACL-BEA**, 2025
+- S. Rezayi, L. A. Ha, V. Yaneva, P. Harik, J. Mee, J. Snyder, "Policy-Sensitive Fairness Evaluation in Automated Scoring of Clinical Communication," **ACL-BEA**, 2026. [pdf](https://aclanthology.org/anthology-files/pdf/bea/2026.bea-1.40.pdf)
+- C. Runyon, P. Baldwin, I. Micir, K. Frome, S. Mann, S. Rezayi, K. Evanini, V. Yaneva, "Evaluating LLM Workflows for Generating Clinical Communication Assessment Items: A Comparative Study with Subject-Matter Experts," **ACL-BEA**, 2026. [pdf](https://aclanthology.org/anthology-files/pdf/bea/2026.bea-1.12.pdf)
 - J. Li, S. Rezayi, P. Baldwin, P. Harik, V. Yaneva, "Towards Reliable Generation of Clinical Chart Items: A Counterfactual Reasoning Approach with Large Language Models," **AIME-Con**, 2025. [pdf](https://aclanthology.org/2025.aimecon-main.16.pdf)
 - V. Yaneva, K. North, P. Baldwin, L. A. Ha, S. Rezayi, Y. Zhou, P. Harik, B. Clauser, "Findings from the First Shared Task on Automated Prediction of Difficulty and Response Time for Multiple-Choice Questions," **ACL-BEA**, 2024
 
@@ -39,4 +41,4 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=D_wiAi4AAAAJ&
 
 ## Service
 
-Reviewer for ACL and ACL Rolling Review, EMNLP, ICML, KDD, UAI, IEEE Sensors Letters, and IEEE Transactions on Biomedical Circuits and Systems. Technical Committee member, MobiQuitous.
+**Program Committee, AAAI.** Reviewer for ACL and ACL Rolling Review, EMNLP, ICML, KDD, UAI, IEEE Sensors Letters, and IEEE Transactions on Biomedical Circuits and Systems. Technical Committee member, MobiQuitous.
