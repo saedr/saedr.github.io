@@ -11,6 +11,7 @@ menu:
 - {name: 'Research', folder: 'pages', file: 'research.html'}
 - {name: 'Publications', folder: 'pages', file: 'publications.html'}
 - {name: 'Photography', folder: 'pages', file: 'photography.html'}
+- {name: 'CV', folder: '', file: 'cv.pdf'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer
 social:
