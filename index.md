@@ -17,7 +17,7 @@ title: Home
 <div class="lede" markdown="1">
 I'm an NLP research scientist at [NBME](https://www.nbme.org/research/meet-our-experts), working on the automated scoring of clinical communication.
 
-My research comes down to a single question: when we say a model scored well, did we measure the thing we meant to? That gets harder every year, because we increasingly evaluate models using other models — and a reported failure can belong to the system under test or to the judge examining it. Most of my work is about telling those two apart.
+My research starts from a simple idea: almost everything we believe about what AI systems can do rests on a measurement. I study whether those measurements are telling us the truth, and how to rebuild them when they are not. This matters especially when AI systems evaluate other AI systems, because a failure may come from the system being tested or from the way we measured it.
 </div>
 
 <div class="cards">
