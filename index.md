@@ -1,16 +1,68 @@
 ---
-layout: misc
-title: About Me
+layout: default
+title: Home
 ---
 
-I'm an NLP research scientist at [NBME](https://www.nbme.org/research/meet-our-experts), where I work on automated scoring of how doctors communicate with patients.
+<div class="hero">
+  <img src="{{ site.github.url }}/assets/img/photos/hero.jpg"
+       srcset="{{ site.github.url }}/assets/img/photos/hero-sm.jpg 900w, {{ site.github.url }}/assets/img/photos/hero.jpg 2000w"
+       sizes="100vw" alt="" fetchpriority="high" decoding="async">
+  <div class="hero-scrim"></div>
+  <div class="hero-text">
+    <h1>Saed Rezayi</h1>
+    <p>NLP research scientist &middot; trustworthy evaluation of language models</p>
+  </div>
+</div>
 
-Most of what I do comes down to one stubborn question: when we say a model scored well, did we actually measure the thing we meant to? It sounds simple. It isn't — especially now that we mostly evaluate models using other models. So a lot of my time goes to telling those two things apart: what the model did, and what the evaluation did to it. If that sounds like your kind of problem, there's more on the [research]({{ site.github.url }}/pages/research.html) page.
+<div class="lede" markdown="1">
+I'm an NLP research scientist at [NBME](https://www.nbme.org/research/meet-our-experts), working on the automated scoring of clinical communication.
 
-I like it here because the scores matter. They feed into how physicians get assessed, so there are experts reading over my shoulder and real pressure to get it right. That turns out to be a very good way to find out whether a method actually works or just looked good on a slide.
+My research comes down to a single question: when we say a model scored well, did we measure the thing we meant to? That gets harder every year, because we increasingly evaluate models using other models — and a reported failure can belong to the system under test or to the judge examining it. Most of my work is about telling those two apart.
+</div>
 
-Before NBME I did my PhD at the University of Georgia with [Sheng Li](https://sheng-li.org/), with stops at Adobe Research and Reuters along the way, mostly teaching language models to use knowledge they weren't trained on.
+<div class="cards">
+  <a class="card" href="{{ site.github.url }}/pages/research.html">
+    <span class="card-k">Research</span>
+    <span class="card-t">Judge validity, explainability, fairness, robustness, item generation</span>
+  </a>
+  <a class="card" href="{{ site.github.url }}/pages/publications.html">
+    <span class="card-k">Publications</span>
+    <span class="card-t">Papers across ACL/NAACL, IJCAI, SDM and IEEE venues, plus service</span>
+  </a>
+  <a class="card" href="{{ site.github.url }}/pages/about.html">
+    <span class="card-k">About</span>
+    <span class="card-t">Background, and how I ended up working on this</span>
+  </a>
+  <a class="card" href="{{ site.github.url }}/pages/photography.html">
+    <span class="card-k">Photography</span>
+    <span class="card-t">Street work, mostly at the wrong shutter speed</span>
+  </a>
+</div>
 
-Away from the keyboard I play the [setar]({{ site.github.url }}/pages/media.html) and wander around cities with a camera, usually at the wrong shutter speed [on purpose]({{ site.github.url }}/pages/photography.html).
-
-Always happy to talk shop — the links up top all reach me.
+<style>
+.hero{position:relative;width:100vw;margin-left:calc(50% - 50vw);margin-bottom:2.4rem;
+  line-height:0;background:#111;overflow:hidden}
+.hero img{width:100%;height:auto;display:block;max-height:48vh;object-fit:cover;
+  filter:saturate(.85) contrast(1.04) brightness(.94)}
+.hero-scrim{position:absolute;inset:0;
+  background:linear-gradient(to top,rgba(0,0,0,.72) 0%,rgba(0,0,0,.25) 42%,rgba(0,0,0,0) 72%)}
+.hero-text{position:absolute;left:0;right:0;bottom:0;
+  padding:0 clamp(18px,5vw,60px) clamp(16px,3.4vw,38px);line-height:1.15}
+.hero-text h1{margin:0 0 .38rem;color:#fff;font-weight:600;
+  font-size:clamp(1.75rem,4.6vw,3.1rem);letter-spacing:.012em;
+  text-shadow:0 2px 22px rgba(0,0,0,.45)}
+.hero-text p{margin:0;color:rgba(255,255,255,.82);font-size:clamp(.66rem,1.5vw,.82rem);
+  letter-spacing:.2em;text-transform:uppercase;text-shadow:0 1px 14px rgba(0,0,0,.5)}
+.lede{max-width:600px;margin:0 auto 2rem;padding:0 10px}
+.lede p{margin-bottom:1rem}
+.lede p:first-child{font-size:1.1rem}
+.cards{max-width:600px;margin:0 auto 2.5rem;padding:0 10px;display:grid;gap:.7rem;
+  grid-template-columns:repeat(2,1fr)}
+@media(max-width:560px){.cards{grid-template-columns:1fr}.hero img{max-height:38vh}}
+.card{display:block;padding:.85rem 1rem;border:1px solid #e4e4e4;border-radius:3px;
+  text-decoration:none;transition:border-color .2s ease,transform .2s ease,box-shadow .2s ease}
+.card:hover{border-color:#2E4A62;transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,.06)}
+.card-k{display:block;font-weight:600;font-size:.95rem;color:#1a1a1a;margin-bottom:.15rem}
+.card-t{display:block;font-size:.8rem;line-height:1.45;color:#6b7280}
+@media(prefers-reduced-motion:reduce){.card{transition:none}.card:hover{transform:none}}
+</style>

@@ -7,11 +7,25 @@ Everything below is one question in different settings: **does this evaluation m
 
 That is the validity question. Assessment has studied it for a century; machine learning is now rediscovering it under other names. Fairness, faithfulness, and robustness are not three separate research areas here — they are three ways an evaluation can fail to be valid, and I approach them with the same tools.
 
-A full list of papers is on the [publications]({{ site.github.url }}/pages/publications.html) page.
+<div class="toc" markdown="1">
+**In short.** Evaluations that use models to judge models are partly measuring the judge — I build methods that separate the two ([judges](#judges)). The evidence a scorer emits often does not survive being read on its own ([explainability](#explainability)). Fairness claims mean little without an explicit account of risk ([fairness](#fairness)). Detection methods should be tested on where they break, not only where they work ([robustness](#robustness)). And when models draft new test items, expert raters disagree about which drafts are usable ([item generation](#generation)).
+</div>
+
+Papers are listed on the [publications]({{ site.github.url }}/pages/publications.html) page.
+
+<style>
+.toc{border-left:3px solid #2E4A62;background:#f7f8f9;padding:.85rem 1.05rem;
+  margin:1.6rem 0;font-size:.88rem;line-height:1.62}
+.toc p{margin:0}
+.yr{display:block;margin:-.35rem 0 .9rem;font-size:.68rem;letter-spacing:.16em;
+  text-transform:uppercase;color:#8a8f98}
+</style>
 
 ---
 
-## When the evaluator is part of the measurement
+## When the evaluator is part of the measurement {#judges}
+
+<span class="yr">2025–present</span>
 
 Using a model to judge another model's output produces a number that reflects two things at once: the property we wanted to measure, and the judge's own fit to the input it was shown. These are routinely reported as if they were only the first.
 
@@ -24,7 +38,9 @@ A related result concerns reproducibility. I ran a panel of independently traine
 
 ---
 
-## Explainability: does the evidence support the claim?
+## Explainability: does the evidence support the claim? {#explainability}
+
+<span class="yr">2025–present</span>
 
 Scoring systems increasingly emit evidence alongside their scores — the span of text that supposedly justifies the decision. Whether that evidence actually supports the label is a separate empirical question from whether the label is correct, and a system can be right for reasons it cannot defend.
 
@@ -37,7 +53,9 @@ I also lead an organization-wide effort to make explainability an accountable pr
 
 ---
 
-## Fairness as a validity problem
+## Fairness as a validity problem {#fairness}
+
+<span class="yr">2024–2026</span>
 
 Fairness evidence is often reported as a table of group-wise metrics with no account of what would count as a problem. This is not a rigor failure so much as a framing failure: a fairness claim means something only when it coheres with a validity argument and an explicit account of risk, including which error direction is costly and to whom.
 
@@ -48,7 +66,9 @@ This work includes cost-sensitive audits of a deployed scoring system, a positio
 
 ---
 
-## Robustness under adversarial pressure
+## Robustness under adversarial pressure {#robustness}
+
+<span class="yr">2025–present</span>
 
 Assessment systems face a real adversary: people who obtain content in advance, or who copy from one another. I build simulation frameworks and detection models for these problems, with emphasis on locating where detection breaks down rather than only demonstrating where it works.
 
@@ -59,7 +79,9 @@ Recent results include mapping the identifiability boundary for joint detection 
 
 ---
 
-## Generating new items, and judging whether they are any good
+## Generating new items, and judging whether they are any good {#generation}
+
+<span class="yr">2024–2026</span>
 
 Assessment organizations constantly need new test items, and writing them is slow expert work. I work on whether language models can draft them, and on the harder question of how you would know whether a draft is any good.
 
@@ -71,6 +93,8 @@ The evaluation is where this connects to the rest of the page. Expert raters dis
 
 ---
 
-## Earlier work: knowledge-infused language models
+## Earlier work: knowledge-infused language models {#earlier}
+
+<span class="yr">2020–2023</span>
 
 My doctoral research addressed a different problem. Pretrained encoders underperform in specialized domains where the relevant knowledge is structured and external to the text. I built methods for injecting that knowledge into language models, producing domain-adapted models for agriculture (AgriBERT) and clinical radiation oncology (ClinicalRadioBERT), a framework for enriching knowledge graphs from external text (EDGE), and a cross-domain short-text clustering method (XDC).

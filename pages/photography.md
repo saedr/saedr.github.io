@@ -19,6 +19,16 @@ I shoot mostly on the street, mostly at slow shutter speeds. I like the moment w
   </div>
 </div>
 
+<div class="setar" markdown="1">
+
+## Setar
+
+I also play the [setar](https://en.wikipedia.org/wiki/Setar) and [shurangiz](https://en.wikipedia.org/wiki/Shurangiz). Below is an adaptation of *Gereyli* — roughly, Leyli's cry — played on setar.
+
+<div class="video"><iframe src="https://www.youtube-nocookie.com/embed/jngB5C5YUdw" title="Gereyli, played on setar" loading="lazy" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+
+</div>
+
 <div class="ph-lb" id="phLb" role="dialog" aria-modal="true" aria-label="Photograph viewer" hidden>
   <button class="ph-close" id="phClose" aria-label="Close">&times;</button>
   <button class="ph-nav ph-prev" id="phPrev" aria-label="Previous">&#8249;</button>
@@ -28,6 +38,10 @@ I shoot mostly on the street, mostly at slow shutter speeds. I like the moment w
 </div>
 
 <style>
+.setar{max-width:600px;margin:3.4rem auto 0;padding-top:2.2rem;border-top:1px solid #e6e6e6}
+.setar h2{margin-top:0}
+.video{position:relative;padding-bottom:56.25%;height:0;margin-top:1.1rem}
+.video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
 .ph-intro{max-width:34em;margin:0 0 2.2rem;opacity:.72;font-size:.98rem;line-height:1.65}
 
 /* full-bleed breakout from the theme container.
