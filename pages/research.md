@@ -5,7 +5,7 @@ title: Research
 
 Everything below is one question in different settings: **does this evaluation measure what it claims to measure?**
 
-That is the validity question. Assessment has studied it for a century; machine learning is now rediscovering it under other names. Fairness, faithfulness, and robustness are not three separate research areas here — they are three ways an evaluation can fail to be valid, and I approach them with the same tools.
+My work asks a general question across fairness, faithfulness, robustness, and model evaluation: does the evidence we measure actually support the conclusion we want to draw?
 
 <div class="toc" markdown="1">
 **In short.** Evaluations that use models to judge models are partly measuring the judge — I build methods that separate the two ([judges](#judges)). The evidence a scorer emits often does not survive being read on its own ([explainability](#explainability)). Fairness claims mean little without an explicit account of risk ([fairness](#fairness)). Detection methods should be tested on where they break, not only where they work ([robustness](#robustness)). And when models draft new test items, expert raters disagree about which drafts are usable ([item generation](#generation)).
