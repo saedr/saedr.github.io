@@ -9,6 +9,8 @@ google_analytics_ga4: G-XT0PGLRP27
 menu:
 - {name: 'About Me', folder: 'pages', file: 'about.html'}
 - {name: 'Research', folder: 'pages', file: 'research.html'}
+- {name: 'Publications', folder: 'pages', file: 'publications.html'}
+- {name: 'Blog', folder: 'blog', file: ''}
 - {name: 'Media', folder: 'pages', file: 'media.html'}
 
 # Available social icons are powered by Font Awesome, so you can use any icon that they offer

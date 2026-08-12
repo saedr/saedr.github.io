@@ -14,8 +14,8 @@ sass:
   style: :nested
 
 # Customise atom feed settings (this is where Jekyll-Feed gets configuration information)
-title:		           "Saed Rezayi"
-description:	       "Personal Webpage"
+title:             "Saed Rezayi"
+description:        "Personal Webpage"
 author:              "Saed Rezayi"
 
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
