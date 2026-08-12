@@ -27,7 +27,7 @@ My research starts from a simple idea: almost everything we believe about what A
   </a>
   <a class="card" href="{{ site.github.url }}/pages/publications.html">
     <span class="card-k">Publications</span>
-    <span class="card-t">Papers across ACL/NAACL, IJCAI, SDM and IEEE venues, plus service</span>
+    <span class="card-t">20+ papers spanning model evaluation, fairness, explainability, and knowledge-infused NLP</span>
   </a>
   <a class="card" href="{{ site.github.url }}/pages/about.html">
     <span class="card-k">About</span>
