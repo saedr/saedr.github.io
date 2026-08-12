@@ -9,7 +9,7 @@ My PhD at the University of Georgia, with [Sheng Li](https://sheng-li.org/), was
 
 That question is now most of my job. At [NBME](https://www.nbme.org/research/meet-our-experts) I work on automated scoring of how doctors communicate with patients — building the systems, and then trying very hard to break my own evidence that they work.
 
-I like it here because the scores matter. They feed into how physicians get assessed, so there are experts reading over my shoulder and real pressure to get it right. That turns out to be a very good way to find out whether a method actually works or just looked good on a slide. It also means I get to borrow from psychometrics, a field that has spent a century on the question of when a measurement can be trusted, and which most of machine learning has not noticed yet.
+I like it here because the scores matter. They feed into how physicians get assessed, so there are experts reading over my shoulder and real pressure to get it right. That turns out to be a very good way to find out whether a method actually works or just looked good on a slide.
 
 Outside of work I play the setar and wander around cities with a camera, usually [at the wrong shutter speed]({{ site.github.url }}/pages/photography.html) on purpose.
 

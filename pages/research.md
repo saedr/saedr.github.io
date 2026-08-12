@@ -3,12 +3,10 @@ layout: misc
 title: Research
 ---
 
-Everything below is one question in different settings: **does this evaluation measure what it claims to measure?**
-
 My work asks a general question across fairness, faithfulness, robustness, and model evaluation: does the evidence we measure actually support the conclusion we want to draw?
 
 <div class="toc" markdown="1">
-**In short.** Evaluations that use models to judge models are partly measuring the judge — I build methods that separate the two ([judges](#judges)). The evidence a scorer emits often does not survive being read on its own ([explainability](#explainability)). Fairness claims mean little without an explicit account of risk ([fairness](#fairness)). Detection methods should be tested on where they break, not only where they work ([robustness](#robustness)). And when models draft new test items, expert raters disagree about which drafts are usable ([item generation](#generation)).
+**In short.** Evaluations that use models to evaluate models are partly measuring the evaluator — I build methods that separate the two ([evaluators](#evaluators)). The evidence a scorer emits often does not survive being read on its own ([explainability](#explainability)). Fairness claims mean little without an explicit account of risk ([fairness](#fairness)). Detection methods should be tested on where they break, not only where they work ([robustness](#robustness)). And when models draft new test items, expert raters disagree about which drafts are usable ([item generation](#generation)).
 </div>
 
 Papers are listed on the [publications]({{ site.github.url }}/pages/publications.html) page.
@@ -23,18 +21,18 @@ Papers are listed on the [publications]({{ site.github.url }}/pages/publications
 
 ---
 
-## When the evaluator is part of the measurement {#judges}
+## When the evaluator is part of the measurement {#evaluators}
 
 <span class="yr">2025–present</span>
 
-Using a model to judge another model's output produces a number that reflects two things at once: the property we wanted to measure, and the judge's own fit to the input it was shown. These are routinely reported as if they were only the first.
+Using a model to evaluate another model's output produces a number that reflects two things at once: the property we wanted to measure, and the evaluator's own fit to the input it was shown. These are routinely reported as if they were only the first.
 
-<img src="{{ site.github.url }}/assets/img/research/judge-decomposition.svg" alt="A reported evaluation score splits into evaluator mismatch and genuine model behavior" />
+<img src="{{ site.github.url }}/assets/img/research/evaluator-decomposition.svg" alt="A reported evaluation score splits into evaluator mismatch and genuine model behavior" />
 
 
-I develop methods that separate them. One approach uses distillation to build a judge adapted to the exact input it will score, then compares it against the conventional same-model judge. The gap between the two estimates how much of the reported failure was evaluator mismatch rather than a genuine property of the output. In the settings I have studied, that share is large enough to change what the evaluation concludes.
+I develop methods that separate them. One approach uses distillation to build an evaluator adapted to the exact input it will score, then compares it against the conventional same-model evaluator. The gap between the two estimates how much of the reported failure was evaluator mismatch rather than a genuine property of the output. In the settings I have studied, that share is large enough to change what the evaluation concludes.
 
-A related result concerns reproducibility. I ran a panel of independently trained judges over identical predictions and measured how much the verdict depended on which judge was used. Judges disagreed with one another on the same items substantially more than the items differed among themselves, and a variance decomposition attributed more variance to the judge and to the judge-by-condition interaction than to the item itself. The practical consequence: a single-judge evaluation result is not reproducible in the way it is usually reported, and the judge's training regime belongs in the results section alongside the score.
+A related result concerns reproducibility. I ran a panel of independently trained evaluators over identical predictions and measured how much the verdict depended on which evaluator was used. Evaluators disagreed with one another on the same items substantially more than the items differed among themselves, and a variance decomposition attributed more variance to the evaluator and to the evaluator-by-condition interaction than to the item itself. The practical consequence: a single-evaluator evaluation result is not reproducible in the way it is usually reported, and the evaluator's training regime belongs in the results section alongside the score.
 
 ---
 
@@ -87,9 +85,9 @@ Assessment organizations constantly need new test items, and writing them is slo
 
 <img src="{{ site.github.url }}/assets/img/research/counterfactual-items.svg" alt="A source vignette transformed through a counterfactual step into a new chart item, with expert ratings below" />
 
-One approach tells the model that some findings in a source case were recorded incorrectly and asks it to rebuild a clinically coherent record, which lands on a different diagnosis. Items produced this way sit measurably further from their source material than straightforward paraphrasing, so the model is inventing rather than rewording. Roughly a quarter came back free of major flaws, and about half were judged useful starting points.
+One approach tells the model that some findings in a source case were recorded incorrectly and asks it to rebuild a clinically coherent record, which lands on a different diagnosis. Items produced this way sit measurably further from their source material than straightforward paraphrasing, so the model is inventing rather than rewording. Roughly a quarter came back free of major flaws, and about half were considered useful starting points.
 
-The evaluation is where this connects to the rest of the page. Expert raters disagreed with each other substantially about which drafts were acceptable, and in a related study rater differences accounted for about a third of the variance in quality ratings. As with model judges, the measured quality of a generated item depends heavily on who is measuring it.
+The evaluation is where this connects to the rest of the page. Expert raters disagreed with each other substantially about which drafts were acceptable, and in a related study rater differences accounted for about a third of the variance in quality ratings. As with model evaluators, the measured quality of a generated item depends heavily on who is measuring it.
 
 ---
 
