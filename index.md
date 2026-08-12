@@ -15,7 +15,7 @@ title: Home
 </div>
 
 <div class="lede" markdown="1">
-I'm an NLP research scientist at [NBME](https://www.nbme.org/research/meet-our-experts), working on the automated scoring of clinical communication.
+I'm an NLP research scientist working on language models in high-stakes settings, currently at [NBME](https://www.nbme.org/research/meet-our-experts).
 
 My research starts from a simple idea: almost everything we believe about what AI systems can do rests on a measurement. I study whether those measurements are telling us the truth, and how to rebuild them when they are not. This matters especially when AI systems evaluate other AI systems, because a failure may come from the system being tested or from the way we measured it.
 </div>
