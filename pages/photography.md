@@ -30,8 +30,11 @@ I shoot mostly on the street, mostly at slow shutter speeds. I like the moment w
 <style>
 .ph-intro{max-width:34em;margin:0 0 2.2rem;opacity:.72;font-size:.98rem;line-height:1.65}
 
-/* full-bleed breakout from the theme container */
-.ph-wrap{width:100vw;margin-left:calc(50% - 50vw);padding:0 clamp(10px,3vw,34px);box-sizing:border-box}
+/* full-bleed breakout from the theme container.
+   --sbw is the scrollbar width, set from JS: 100vw includes the scrollbar,
+   so subtracting it keeps the page from scrolling sideways. */
+.ph-wrap{width:calc(100vw - var(--sbw,0px));margin-left:calc(50% - (100vw - var(--sbw,0px))/2);
+  padding:0 clamp(10px,3vw,34px);box-sizing:border-box}
 
 .ph-grid{column-count:3;column-gap:clamp(10px,1.5vw,20px)}
 @media(max-width:1000px){.ph-grid{column-count:2}}
@@ -94,6 +97,13 @@ body.ph-open{overflow:hidden}
 
 <script>
 (function(){
+  function sbw(){
+    document.documentElement.style.setProperty('--sbw',
+      (window.innerWidth - document.documentElement.clientWidth) + 'px');
+  }
+  sbw();
+  window.addEventListener('resize', sbw);
+
   var items=[].slice.call(document.querySelectorAll('.ph-item'));
   if(!items.length) return;
   var lb=document.getElementById('phLb'), img=document.getElementById('phImg'),
