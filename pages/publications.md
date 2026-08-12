@@ -9,6 +9,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=D_wiAi4AAAAJ&
 
 - S. Rezayi, L. A. Ha, Y. Zhou, A. Houriet, A. D'Addario, P. Baldwin, P. Harik, A. King, V. Yaneva, "Automated Scoring of Communication Skills in Physician-Patient Interaction: Balancing Performance and Scalability," **ACL-BEA**, 2025
 - S. Yarmohammadtoosky, Y. Zhou, V. Yaneva, P. Baldwin, S. Rezayi, B. Clauser, P. Harik, "Enhancing Security and Strengthening Defenses in Automated Short-Answer Grading Systems," **ACL-BEA**, 2025
+- J. Li, S. Rezayi, P. Baldwin, P. Harik, V. Yaneva, "Towards Reliable Generation of Clinical Chart Items: A Counterfactual Reasoning Approach with Large Language Models," **AIME-Con**, 2025. [pdf](https://aclanthology.org/2025.aimecon-main.16.pdf)
 - V. Yaneva, K. North, P. Baldwin, L. A. Ha, S. Rezayi, Y. Zhou, P. Harik, B. Clauser, "Findings from the First Shared Task on Automated Prediction of Difficulty and Response Time for Multiple-Choice Questions," **ACL-BEA**, 2024
 
 ## Language models and knowledge

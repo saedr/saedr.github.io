@@ -51,12 +51,19 @@ Assessment systems face a real adversary: people who obtain content in advance, 
 
 Recent results include mapping the identifiability boundary for joint detection of compromised content and affected respondents, and a temporal change-point method that localizes when a leak began — validated against a bank of adversarial null conditions constructed specifically to produce false alarms.
 
-## Evaluating generated content at scale
+## Generating new items, and judging whether they are any good
 
-Generating assessment content with language models moves the bottleneck from writing to verification. I designed a layered evaluation pipeline for model-generated clinical cases, running from deterministic constraint checks through model-based quality gates to bank-level near-duplicate detection, and specified it to double as a verifiable reward function — so the same checks that gate content can also train the generator.
+Assessment organizations constantly need new test items, and writing them is slow expert work. With colleagues at NBME and UC Irvine, I looked at whether large language models can draft clinical chart items — full patient records with an associated question — and, more importantly, how you would know whether the drafts are usable.
 
-<img src="{{ site.github.url }}/assets/img/research/content-gates.svg" alt="Generated cases passing through deterministic, model-based, and deduplication gates" />
+<img src="{{ site.github.url }}/assets/img/research/counterfactual-items.svg" alt="A source vignette transformed through a counterfactual step into a new chart item, with expert ratings below" />
 
+The generation method is the interesting part. Rather than paraphrasing a source vignette, we told the model that some of its findings had been recorded incorrectly and asked it to reconstruct a clinically coherent record — which lands on a different diagnosis. A second pass has the model build a knowledge base about both the original and the new condition, and that gets fed back in to keep the result factually grounded. Items produced this way sat measurably further from their source material than chain-of-thought drafts did, so the model was inventing rather than rephrasing.
+
+We also found that few-shot example choice matters in a direction I did not expect. Using the *easiest* examples — those where the model was least surprised by the correct answer — produced worse items. Harder examples seemed to push it into doing more actual reasoning.
+
+Two licensed physicians rated 100 generated items. Around a quarter were free of major flaws on first read and about half were judged useful starting points compared with writing from scratch. The part I keep coming back to is the disagreement: on chart quality the two experts agreed barely above chance. Their written comments showed they were reading the same rubric differently. That is the same problem as the rest of this page, arriving from the other direction — the evaluation was as much about the raters as about the items.
+
+[Paper](https://aclanthology.org/2025.aimecon-main.16.pdf) — Li, Rezayi, Baldwin, Harik, Yaneva, AIME-Con 2025.
 
 ---
 

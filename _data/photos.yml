@@ -1,0 +1,16 @@
+# Photographs shown on /pages/photography.html, in display order.
+# To add one: drop <slug>.jpg and <slug>-thumb.jpg in assets/img/photos/ and add an entry here.
+
+- {slug: 'action', title: 'Action', w: 900, h: 900}
+- {slug: 'babel', title: 'Babel', w: 689, h: 900}
+- {slug: 'hope', title: 'Hope', w: 900, h: 900}
+- {slug: 'vortex', title: 'Vortex', w: 900, h: 900}
+- {slug: 'quaintrelle', title: 'Quaintrelle', w: 743, h: 900}
+- {slug: 'ether', title: 'Ether', w: 900, h: 675}
+- {slug: 'pulse', title: 'Pulse', w: 600, h: 900}
+- {slug: 'illusion', title: 'Illusion', w: 900, h: 680}
+- {slug: 'lines', title: 'Lines', w: 803, h: 900}
+- {slug: 'fragile', title: 'Fragile', w: 850, h: 900}
+- {slug: 'race', title: 'Race', w: 900, h: 900}
+- {slug: 'determined', title: 'Determined', w: 643, h: 900}
+- {slug: 'backed', title: 'Backed', w: 900, h: 900}
