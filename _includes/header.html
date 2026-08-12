@@ -7,6 +7,7 @@
       <a href="{{ site.github.url }}/{% if item.folder != '' %}{{ item.folder }}/{% endif %}{{ item.file }}" class="menu-link">{{ item.name }}</a>
     {% endfor %}
 
+    <a href="{{ site.github.url }}/assets/cv.pdf" class="menu-link" target="_blank" aria-label="CV">CV</a>
     {% for item in site.data.settings.social %}
       {% if item.icon == 'google-scholar' %}
         <a href="{{ item.link }}" class="menu-link" target="_blank" aria-label="Google Scholar"><i class="ai ai-{{ item.icon }}" aria-hidden="true"></i></a>
@@ -22,6 +23,7 @@
         <a href="{{ site.github.url }}/{% if item.folder != '' %}{{ item.folder }}/{% endif %}{{ item.file }}" class="menu-link">{{ item.name }}</a>
       {% endfor %}
 
+      <a href="{{ site.github.url }}/assets/cv.pdf" class="menu-link" target="_blank" aria-label="CV">CV</a>
       {% for item in site.data.settings.social %}
         {% if item.icon == 'google-scholar' %}
           <a href="{{ item.link }}" class="menu-link" target="_blank"><i class="ai ai-{{ item.icon }}" aria-hidden="true"></i></a>
