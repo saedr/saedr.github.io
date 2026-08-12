@@ -17,6 +17,12 @@ author:              "Saed Rezayi"
 url:                 "https://saedr.github.io"
 image:               "https://saedr.github.io/assets/img/photos/hero.jpg"
 
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: "https://saedr.github.io/assets/img/photos/hero.jpg"
+
 # RSS 2.0 can be used instead of Atom by uncommenting following two lines
 #feed:
 #  path: rss-feed.xml
